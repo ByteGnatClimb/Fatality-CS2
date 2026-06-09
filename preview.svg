@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="450" viewBox="0 0 1200 450">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#060010"/>
+      <stop offset="50%" stop-color="#0E0020"/>
+      <stop offset="100%" stop-color="#060010"/>
+    </linearGradient>
+    <linearGradient id="purpleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7C3AED"/>
+      <stop offset="100%" stop-color="#C084FC"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="deepglow">
+      <feGaussianBlur stdDeviation="12" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="450" fill="url(#bg)"/>
+
+  <!-- Purple glow orb center-left -->
+  <circle cx="270" cy="225" r="200" fill="#7C3AED" opacity="0.04"/>
+  <circle cx="270" cy="225" r="130" fill="#7C3AED" opacity="0.04"/>
+  <circle cx="270" cy="225" r="80" fill="#7C3AED" opacity="0.05"/>
+
+  <!-- Left: Geometric blade logo -->
+  <!-- Outer ring -->
+  <circle cx="270" cy="225" r="155" fill="none" stroke="#7C3AED" stroke-width="1" opacity="0.3" stroke-dasharray="6,4"/>
+  <circle cx="270" cy="225" r="120" fill="none" stroke="#7C3AED" stroke-width="1.5" opacity="0.4"/>
+  <circle cx="270" cy="225" r="90" fill="none" stroke="#A855F7" stroke-width="1" opacity="0.3"/>
+
+  <!-- Geometric lines (fatality-style angular decoration) -->
+  <g stroke="#7C3AED" stroke-width="1.5" opacity="0.6">
+    <line x1="270" y1="105" x2="270" y2="345"/>
+    <line x1="150" y1="225" x2="390" y2="225"/>
+    <line x1="185" y1="140" x2="355" y2="310"/>
+    <line x1="355" y1="140" x2="185" y2="310"/>
+  </g>
+
+  <!-- Diamond shape -->
+  <polygon points="270,130 350,225 270,320 190,225" fill="none" stroke="#A855F7" stroke-width="2" filter="url(#glow)"/>
+  <polygon points="270,165 320,225 270,285 220,225" fill="#7C3AED" opacity="0.15"/>
+  <polygon points="270,165 320,225 270,285 220,225" fill="none" stroke="#C084FC" stroke-width="1.5" filter="url(#glow)"/>
+
+  <!-- Fatality text inside -->
+  <text x="270" y="232" font-family="'Arial Black', sans-serif" font-size="22" font-weight="900" fill="url(#purpleGrad)" filter="url(#glow)" text-anchor="middle" letter-spacing="1">fatality</text>
+
+  <!-- Corner triangles -->
+  <polygon points="155,225 195,195 195,255" fill="#7C3AED" opacity="0.4" filter="url(#glow)"/>
+  <polygon points="385,225 345,195 345,255" fill="#7C3AED" opacity="0.4" filter="url(#glow)"/>
+
+  <!-- Divider -->
+  <line x1="450" y1="30" x2="450" y2="420" stroke="#7C3AED" stroke-width="1.5" opacity="0.35"/>
+
+  <!-- Right side: title and feature matrix -->
+  <text x="490" y="110" font-family="'Arial Black', sans-serif" font-size="76" font-weight="900" fill="url(#purpleGrad)" filter="url(#glow)" letter-spacing="1">fatality</text>
+  <text x="494" y="148" font-family="monospace" font-size="15" fill="#7C3AED" opacity="0.8" letter-spacing="4">FATALITY.WIN  ·  CS2</text>
+
+  <!-- Aim module visual breakdown -->
+  <rect x="490" y="175" width="670" height="55" rx="5" fill="#7C3AED" opacity="0.08" stroke="#7C3AED" stroke-width="1" stroke-opacity="0.35"/>
+  <text x="510" y="196" font-family="monospace" font-size="11" fill="#A855F7" opacity="0.7">AIM MODE</text>
+  <rect x="505" y="202" width="90" height="20" rx="3" fill="#7C3AED" opacity="0.4"/>
+  <text x="550" y="217" font-family="monospace" font-size="12" fill="#C084FC" text-anchor="middle">RageBot</text>
+  <rect x="605" y="202" width="90" height="20" rx="3" fill="#7C3AED" opacity="0.2"/>
+  <text x="650" y="217" font-family="monospace" font-size="12" fill="#888888" text-anchor="middle">LegitBot</text>
+  <text x="720" y="215" font-family="monospace" font-size="11" fill="#A855F7" opacity="0.7">|</text>
+  <text x="735" y="215" font-family="monospace" font-size="12" fill="#CCCCCC">FOV <tspan fill="#C084FC">4.5°</tspan>  Smooth <tspan fill="#C084FC">6</tspan></text>
+  <text x="940" y="215" font-family="monospace" font-size="12" fill="#888888">Resolver: <tspan fill="#44FF88">ON</tspan></text>
+
+  <!-- Visual config preview -->
+  <g font-family="monospace" font-size="12">
+    <text x="490" y="260" fill="#7C3AED" opacity="0.6">VISUAL CONFIG</text>
+    <line x1="576" y1="254" x2="1150" y2="254" stroke="#7C3AED" stroke-width="1" opacity="0.2"/>
+
+    <text x="490" y="280" fill="#888888">Box:</text><text x="540" y="280" fill="#C084FC">2D Corner</text>
+    <text x="680" y="280" fill="#888888">Health:</text><text x="740" y="280" fill="#C084FC">Bar left</text>
+    <text x="850" y="280" fill="#888888">Armor:</text><text x="910" y="280" fill="#C084FC">Icon</text>
+    <text x="980" y="280" fill="#888888">Glow:</text><text x="1030" y="280" fill="#44FF88">ON</text>
+
+    <text x="490" y="302" fill="#888888">Name:</text><text x="547" y="302" fill="#C084FC">Steam</text>
+    <text x="680" y="302" fill="#888888">Weapon:</text><text x="748" y="302" fill="#C084FC">Icon+Text</text>
+    <text x="850" y="302" fill="#888888">Chams:</text><text x="914" y="302" fill="#C084FC">XQZ</text>
+    <text x="980" y="302" fill="#888888">Skel:</text><text x="1030" y="302" fill="#44FF88">ON</text>
+
+    <text x="490" y="324" fill="#888888">Backtrack:</text><text x="571" y="324" fill="#C084FC">12 ticks</text>
+    <text x="680" y="324" fill="#888888">Nade arcs:</text><text x="762" y="324" fill="#C084FC">ON</text>
+    <text x="850" y="324" fill="#888888">Bomb HUD:</text><text x="940" y="324" fill="#44FF88">ON</text>
+    <text x="980" y="324" fill="#888888">Fakelag:</text><text x="1044" y="324" fill="#C084FC">14t</text>
+  </g>
+
+  <!-- LUA tag -->
+  <rect x="490" y="350" width="660" height="42" rx="4" fill="#7C3AED" opacity="0.07" stroke="#7C3AED" stroke-width="1" stroke-opacity="0.25"/>
+  <text x="510" y="368" font-family="monospace" font-size="11" fill="#A855F7" opacity="0.6">LUA SCRIPTING</text>
+  <text x="510" y="384" font-family="monospace" font-size="13" fill="#CCCCCC">API v2.4  ·  800+ community scripts  ·  Cloud config sync  ·  Custom crosshairs</text>
+
+  <!-- Bottom bar -->
+  <rect x="0" y="415" width="1200" height="35" fill="#7C3AED" opacity="0.07"/>
+  <line x1="0" y1="415" x2="1200" y2="415" stroke="#7C3AED" stroke-width="1" opacity="0.3"/>
+  <text x="30" y="437" font-family="monospace" font-size="12" fill="#7C3AED" opacity="0.6">fatality.win  ·  CS2  ·  RageBot + LegitBot + Resolver  ·  LUA API v2.4  ·  Cloud Configs</text>
+</svg>

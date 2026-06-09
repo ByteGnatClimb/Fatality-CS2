@@ -1,6 +1,6 @@
 <div align="center">
 
-# fatality.win — CS2
+# Fatality.win CS2
 
 [![Status](https://img.shields.io/badge/CS2-supported-7C3AED?style=flat-square)](https://zeptohornbilltassel.github.io/nightcore/)
 [![API](https://img.shields.io/badge/LUA%20API-v2.4-A855F7?style=flat-square)]()
